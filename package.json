@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch sass/input.scss ../css/output.css",
+    "sass": "sass --watch sass/main.scss:css/main.css",
     "dev": "npx @tailwindcss/cli -i css/input.css -o css/output.css --watch"
   },
   "dependencies": {

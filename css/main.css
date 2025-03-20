@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 60px;
+  background-color: #899E8B;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+}
+
+#logo {
+  margin: 5px;
+  width: 90px;
+  grid-column: 1;
+}
+
+#menu {
+  width: 50px;
+  justify-self: end;
+  margin: 10px;
+  grid-column: 4/5;
+}
+
+@media screen and (min-width: 640px) {
+  header {
+    height: 70px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 30px;
+  }
+  #logo {
+    width: 110px;
+  }
+  #menu {
+    grid-column: 6/7;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
