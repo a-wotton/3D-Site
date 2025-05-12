@@ -5,29 +5,72 @@
     background-color: #fff;
     border-radius: 10px;
     padding: 5px;
+    font-weight: 200;
 }
 
 #scene {
-    grid-column: 1/5;
-    position: absolute;
-    top: 110px;
-    z-index: 100;
+    position: block;
+    margin: 0 auto;
     justify-self: center;
+    grid-column: 1/5;
 }   
 
 #texture_select {
+    grid-column-start: 1;
     list-style: none;
     display: flex;
     flex-direction: row;
-    margin-top: 475px;
-    z-index: -2;
+    margin-top: -30px;
+    border-radius: 15px;
+    background-color: #cdcdcd;
+    padding: 10px;
 }
 
 #texture_select li {
-    grid-column: 1/5;
     width: 50px;
     height: 50px;
     background-color: #3e3e3e;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-left: 25px;
+    z-index: 1;
+}
+
+#texture_select li:first-of-type {
+  margin: 0;
+}
+
+#texture_select li:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width:640px) {
+    #furniture_name {
+        font-size: 28px;
+    }
+
+    #scene {
+        grid-column: 1/9;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    #furniture_name {
+        font-size: 32px;
+    }
+
+    #scene {
+        grid-column: 1/8;
+    }
+
+    #texture_select {
+        margin-top: 0;
+        flex-direction: column;
+        grid-column: 8/12;
+        height: 220px;
+        justify-content: space-between;
+    }
+
+    #texture_select li {
+        margin: 0;
+    }
 }

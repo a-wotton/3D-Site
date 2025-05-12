@@ -1,0 +1,44 @@
+@use '../misc/colours' as *;
+
+#mobile_menu {
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    padding: 10px;
+    background-color: $olive;
+    margin: 0;
+    border-top: solid 2px $dark_brown;
+    filter: brightness(0.9);
+}
+
+#mobile_menu li:first-of-type {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#mobile_menu li {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    color: $dark_brown; 
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: solid 2px $dark_brown;
+}
+
+#mobile_menu a {
+    color: $dark_brown;
+    text-decoration: none;  
+}
+
+.toggled {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    #mobile_menu {
+        display: none;
+    }
+}

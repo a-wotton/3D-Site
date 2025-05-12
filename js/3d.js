@@ -12,8 +12,21 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(500, 500);
 
+//Resize canvas 
+var mql = window.matchMedia("(min-width: 1024px)");
+function resize() {
+    if(mql.matches) {
+        // console.log(mql.matches);
+        // console.log("resized");
+        renderer.setSize(700, 700);
+   } else {
+    renderer.setSize(500, 500)
+   }
+
+}window.onresize = resize; 
+//GLTF model loader
 const loader = new GLTFLoader();
-const camera = new THREE.PerspectiveCamera(75, 500/500, 0.1, 1000);
+const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 camera.position.set(-0.4, 0.4, 0.8); 
 
 loader.load(
