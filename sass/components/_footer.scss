@@ -1,0 +1,51 @@
+@use '../misc/colours' as *;
+
+footer {
+    background-color: $dark_brown;
+    height: 100px;
+}
+
+footer ul {
+    grid-column: 1/-1;
+    padding: 0;
+}
+
+footer ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+}
+
+footer ul li:first-of-type {
+    margin-left: 10px;
+}
+
+footer ul li a {   
+    color: $white;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 640px) {
+    footer ul li {
+        margin-left: 40px;
+    }
+    
+    footer ul li:first-of-type {
+        margin-left: 20px;
+    }
+
+    footer ul li a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer ul li {
+        margin-left: 50px;
+    }
+
+    footer ul li:first-of-type {
+        margin-left: 30px;
+    }
+}
