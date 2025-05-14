@@ -8,6 +8,7 @@
     background-color: $olive;
     margin: 0;
     border-top: solid 2px $dark_brown;
+    border-bottom: solid 2px $dark_brown;
     filter: brightness(0.9);
 }
 
@@ -16,6 +17,11 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+#mobile_menu li:last-of-type {
+    margin-bottom: 50px;
+}
+
 
 #mobile_menu li {
     text-align: center;
