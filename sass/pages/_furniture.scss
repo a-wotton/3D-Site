@@ -1,0 +1,69 @@
+@use '../misc/colours' as *;
+
+#furniture_text {
+    grid-column: 1/-1;
+    padding: 20px;
+    background-color: $blue_green;
+    color: $white;
+    text-align: center;
+}
+
+#categories {
+    margin-top: 20px;
+}
+
+#categories div {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#categories a {
+    grid-column: span 1;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border: solid $blue_green 1px;
+    border-bottom: solid $blue_green 8px;
+    color: $brown_grey;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    width: 15%;
+}
+
+#preview {
+    margin-top: 30px;
+}
+
+#preview div {
+    grid-column: span 2;
+}
+
+#preview img {
+    height: 200px;
+    display: block;
+    justify-self: start;    
+}
+
+@media screen and (min-width: 640px) {
+    #categories a {
+        width: 17%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #furniture_text h1{
+        font-size: 28px;
+    }
+
+    #furniture_text {
+        font-size: 18px;
+    }
+
+    #categories a {
+        width: 20%;
+    }
+}
+

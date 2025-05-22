@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="module" src="js/mobile_menu.js"></script>
+</head>
+<body>
+    <header class="full_grid">
+        <img id="logo" class="col-span-1" src="images/logo.svg" alt="logo">
+        <nav id="main_nav">
+            <ul>
+                <li class="selected"><a href="index.html">Home</a></li>
+                <li><a href="furniture_details.html">Furniture</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <img id="menu" src="images/hamburg.svg" alt="hamburger menu">
+    </header>
+
+    <nav class="full_grid">
+        <ul id="mobile_menu" class="toggled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="furniture_text" class="grid_full">
+        <h1>Take a look at our furniture.</h1>
+        <p>In maximus tempus magna, in commodo massa luctus a. Phasellus massa metus, sodales id quam in, dignissim tristique lectus. Phasellus sit amet sapien non mauris facilisis cursus in ac eros. Etiam quis fringilla nunc. Aenean ornare semper ornare. Nam orci justo, tempor maximus tortor at, vestibulum finibus elit. Aliquam erat volutpat.</p>
+    </section>
+
+    <section id="categories" class="grid">
+        <div>
+            <a href="#">Chairs</a>
+            <a href="#">Tables</a>
+            <a href="#">Shelves</a>
+            <a href="#">Beds</a>
+        </div>
+    </section>
+
+    <section id="preview" class="grid">
+        <div class="preview_option">
+            <img src="images/chair_placeholder.png" alt="">
+            <p>Furniture Name</p>
+        </div>
+    </section>
+</body>
+</html>

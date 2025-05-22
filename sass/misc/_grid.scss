@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 10px;
-    min-width: 475px;
 }
 
 .grid {
@@ -11,7 +10,6 @@
     grid-column-gap: 10px;
     margin-right: 10px;
     margin-left: 10px;
-    min-width: 475px;
 }
 
 

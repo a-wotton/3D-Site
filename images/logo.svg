@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 269.23 152.04">
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 279 152">
+  <!-- Generator: Adobe Illustrator 29.2.0, SVG Export Plug-In . SVG Version: 2.1.0 Build 108)  -->
   <defs>
     <style>
-      .cls-1 {
+      .st0 {
         font-size: 36px;
-        letter-spacing: -.02em;
       }
 
-      .cls-1, .cls-2 {
+      .st0, .st1, .st2 {
+        isolation: isolate;
+      }
+
+      .st0, .st2 {
         fill: #54514b;
         font-family: BodoniSvtyTwoITCTT-Book, 'Bodoni 72';
       }
 
-      .cls-2 {
-        font-size: 135.63px;
-        letter-spacing: -.04em;
+      .st2 {
+        font-size: 135.6px;
       }
     </style>
   </defs>
-  <g id="Layer_1-2" data-name="Layer 1">
-    <text class="cls-2" transform="translate(.13 115.42)"><tspan x="0" y="0">hf</tspan></text>
-    <text class="cls-1" transform="translate(113.75 84.48)"><tspan x="0" y="0">Home </tspan><tspan x="0" y="32">Furnishings</tspan></text>
+  <g id="Layer_1-2">
+    <g class="st1">
+      <text class="st2" transform="translate(.1 115.4)"><tspan x="0" y="0">hf</tspan></text>
+    </g>
+    <g class="st1">
+      <text class="st0" transform="translate(113.8 84.5)"><tspan x="0" y="0">Home </tspan></text>
+      <text class="st0" transform="translate(113.8 116.5)"><tspan x="0" y="0">Furnishings</tspan></text>
+    </g>
   </g>
 </svg>
