@@ -25,12 +25,17 @@
     padding-left: 20px;
     padding-bottom: 20px;
     border: solid $blue_green 1px;
-    border-bottom: solid $blue_green 8px;
+    box-shadow: inset $blue_green 0 -4px;
     color: $brown_grey;
     text-decoration: none;
     font-size: 18px;
     text-align: center;
     width: 15%;
+    transition: all 0.5s ease-out
+}
+
+#categories a:hover {
+    box-shadow: inset $blue_green 0 -8px;
 }
 
 #preview {
@@ -38,13 +43,34 @@
 }
 
 #preview div {
-    grid-column: span 2;
+    display: flex;
 }
 
-#preview img {
+.preview_option {
+    grid-column: span 2;
+    border: solid 1px $dark_brown;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.preview_option p {
+    color: $black;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.preview_image {
     height: 200px;
     display: block;
-    justify-self: start;    
+    justify-self: center;    
+}
+
+.arrow {
+    height: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    justify-self: center;
+    align-self: center;
 }
 
 @media screen and (min-width: 640px) {
@@ -64,6 +90,14 @@
 
     #categories a {
         width: 20%;
+    }
+
+    .preview_option {
+        grid-column: span 4;
+    }
+
+    .preview_image {
+        height: 230px;
     }
 }
 

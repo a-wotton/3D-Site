@@ -380,12 +380,17 @@ footer ul li a {
   padding-left: 20px;
   padding-bottom: 20px;
   border: solid #99C5B5 1px;
-  border-bottom: solid #99C5B5 8px;
+  box-shadow: inset #99C5B5 0 -4px;
   color: #706C61;
   text-decoration: none;
   font-size: 18px;
   text-align: center;
   width: 15%;
+  transition: all 0.5s ease-out;
+}
+
+#categories a:hover {
+  box-shadow: inset #99C5B5 0 -8px;
 }
 
 #preview {
@@ -393,13 +398,34 @@ footer ul li a {
 }
 
 #preview div {
-  grid-column: span 2;
+  display: flex;
 }
 
-#preview img {
+.preview_option {
+  grid-column: span 2;
+  border: solid 1px #54514B;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.preview_option p {
+  color: #353535;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.preview_image {
   height: 200px;
   display: block;
-  justify-self: start;
+  justify-self: center;
+}
+
+.arrow {
+  height: 20px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  justify-self: center;
+  align-self: center;
 }
 
 @media screen and (min-width: 640px) {
@@ -416,6 +442,12 @@ footer ul li a {
   }
   #categories a {
     width: 20%;
+  }
+  .preview_option {
+    grid-column: span 4;
+  }
+  .preview_image {
+    height: 230px;
   }
 }
 .full_grid {
