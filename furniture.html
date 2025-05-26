@@ -12,11 +12,11 @@
 </head>
 <body>
     <header class="full_grid">
-        <img id="logo" class="col-span-1" src="images/logo.svg" alt="logo">
+        <a href="index.html"><img id="logo" class="col-span-1" src="images/logo.svg" alt="logo"></a>
         <nav id="main_nav">
             <ul>
-                <li class="selected"><a href="index.html">Home</a></li>
-                <li><a href="furniture_details.html">Furniture</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="selected"><a href="furniture.html">Furniture</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
@@ -46,10 +46,37 @@
     </section>
 
     <section id="preview" class="grid">
-        <div class="preview_option">
-            <img src="images/chair_placeholder.png" alt="">
-            <p>Furniture Name</p>
-        </div>
+        <a href="furniture_details.html" class="preview_option">
+            <img class="preview_image" src="images/chair_placeholder.png" alt="chair">
+            <div>
+                <p>Massa Luctus</p>
+                <img class="arrow" src="images/arrow.svg" alt="arrow">
+            </div>    
+        </a>
+
+        <a href="furniture_details.html" class="preview_option">
+            <img class="preview_image" src="images/table_placeholder.jpg" alt="table">
+            <div>
+                <p>Fermentum Sit Amet</p>
+                <img class="arrow" src="images/arrow.svg" alt="arrow">
+            </div>    
+        </a>
+
+        <a href="furniture_details.html" class="preview_option">
+            <img class="preview_image" src="images/bed_placeholder.jpeg" alt="bed">
+            <div>
+                <p>Laoreet Lacus Facilisis</p>
+                <img class="arrow" src="images/arrow.svg" alt="arrow">
+            </div>    
+        </a>
     </section>
+
+    <footer class="full_grid">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Furniture</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
